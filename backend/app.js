@@ -13,7 +13,7 @@ config({ path: "./config/config.env" });
 // CORS configuration
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://test-project-wt7s.onrender.com'], // Include all necessary origins
+    origin: ['https://test-project-mu-six.vercel.app'], // Include all necessary origins
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
