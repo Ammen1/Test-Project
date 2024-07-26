@@ -1,9 +1,5 @@
-To add an image at the top of your `README.md`, you'll need to use Markdown syntax for images. Here’s how you can include an image at the top of your file:
-
-```markdown
-![MusicApp Logo](Addissoftware-logo.svg)
-
 # MusicApp
+![MusicApp Logo](Addissiftware-logo.svg)
 
 MusicApp is a comprehensive application designed for discovering, managing, and interacting with your favorite songs, albums, and artists. This project serves as a test project for a position at Addis Software PLC, showcasing various modern technologies and best practices in both frontend and backend development.
 
@@ -156,6 +152,7 @@ This project is created as a test for Addis Software PLC. It demonstrates the fo
 - **Backend Development**: Implementing Node.js, Express, and MongoDB for server-side functionality.
 - **Integration**: Full stack integration showcasing how frontend and backend components interact.
 
+
 ## Acknowledgements
 
 - **React**: For building dynamic UIs.
@@ -164,7 +161,5 @@ This project is created as a test for Addis Software PLC. It demonstrates the fo
 - **Node.js**: For server-side development.
 - **Express**: For API routing.
 - **MongoDB**: For database management.
-- **Docker**: For containerizing the database.
-```
+- **Docker**: For containerizing the database..
 
-Make sure to replace `path/to/your/image.png` with the actual path to your image file. If the image is in the same repository, you can use a relative path to it.
