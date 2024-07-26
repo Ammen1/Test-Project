@@ -9,6 +9,9 @@ const dashboardContainer = css`
   display: flex;
   min-height: 100vh;
   background-color: #fff;
+  @media (max-width: 768px) {
+    margin-left: 0; 
+  }
 `;
 
 const mainContent = css`
