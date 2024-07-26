@@ -59,7 +59,7 @@ Here are the available backend API endpoints for interacting with the music data
 
 - **Endpoint**: `GET /api/songs/songs/songs/statistics`
 - **Description**: Retrieves statistics related to songs.
-- **URL**: [https://test-project-wt7s.onrender.com/api/songs/songs/statistics](https://test-project-wt7s.onrender.com/api/songs/songs/songs/statistics)
+- **URL**: [https://test-project-wt7s.onrender.com/api/songs/songs/statistics](https://test-project-wt7s.onrender.com/api/songs/songs/statistics)
 - **Example Request**:
     ```bash
     curl -X GET https://test-project-wt7s.onrender.com/api/songs/songs/songs/statistics
