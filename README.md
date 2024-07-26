@@ -1,5 +1,5 @@
 # MusicApp
-![MusicApp Logo](Addissiftware-logo.svg)
+![MusicApp Logo](Addissoftware-logo.svg)
 
 MusicApp is a comprehensive application designed for discovering, managing, and interacting with your favorite songs, albums, and artists. This project serves as a test project for a position at Addis Software PLC, showcasing various modern technologies and best practices in both frontend and backend development.
 
