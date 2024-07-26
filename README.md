@@ -1,7 +1,7 @@
 # MusicApp
 ![MusicApp Logo](Addissoftware-logo.svg)
 
-MusicApp is a comprehensive application designed for discovering, managing, and interacting with your favorite songs, albums, and artists. This project serves as a test project for a position at Addis Software PLC, showcasing various modern technologies and best practices in both frontend and backend development.
+This project serves as a test project for a position at Addis Software PLC, showcasing various modern technologies and best practices in both frontend and backend development.
 
 ## Features
 
@@ -29,6 +29,41 @@ MusicApp is a comprehensive application designed for discovering, managing, and 
 - **MongoDB**: NoSQL database for storing user and music data.
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB.
 - **WebSocket**: For real-time data updates.
+
+
+## API Endpoints
+
+Here are the available backend API endpoints for interacting with the music data:
+
+### Fetch Songs
+
+- **Endpoint**: `GET /api/songs/songs`
+- **Description**: Retrieves a list of all songs.
+- **URL**: [https://test-project-wt7s.onrender.com/api/songs/songs](https://test-project-wt7s.onrender.com/api/songs/songs)
+- **Example Request**:
+    ```bash
+    curl -X GET https://test-project-wt7s.onrender.com/api/songs/songs
+    ```
+
+### Create Song
+
+- **Endpoint**: `POST /api/songs/create_songs`
+- **Description**: Creates a new song entry.
+- **URL**: [https://test-project-wt7s.onrender.com/api/songs/create_songs](https://test-project-wt7s.onrender.com/api/songs/create_songs)
+- **Example Request**:
+    ```bash
+    curl -X POST https://test-project-wt7s.onrender.com/api/songs/create_songs -H "Content-Type: application/json" -d '{"title": "Song Title", "artist": "Artist Name", "album": "Album Name"}'
+    ```
+
+### Song Statistics
+
+- **Endpoint**: `GET /api/songs/songs/songs/statistics`
+- **Description**: Retrieves statistics related to songs.
+- **URL**: [https://test-project-wt7s.onrender.com/api/songs/songs/songs/statistics](https://test-project-wt7s.onrender.com/api/songs/songs/songs/statistics)
+- **Example Request**:
+    ```bash
+    curl -X GET https://test-project-wt7s.onrender.com/api/songs/songs/songs/statistics
+    ```
 
 ## Installation
 
