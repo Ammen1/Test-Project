@@ -17,16 +17,15 @@ import {
   fetchStatisticsSuccess,
   fetchStatisticsFailure,
 } from '../features/songSlice';
-import { Song } from '../types'; // Adjust the import path according to your project structure
 
 const BASE_URL = 'https://test-project-wt7s.onrender.com/api/songs';
 
 // Generic API call handler
-function* apiCall(method: string, url: string, data?: any) {
+function* apiCall(method: string, url: string, data?: unknown) {
   try {
     const response = yield call(axios, { method, url, data });
     return response.data;
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(error.response?.data?.message || error.message);
   }
 }
@@ -40,7 +39,7 @@ function* fetchSongsSaga() {
     } else {
       yield put(fetchSongsFailure('Failed to fetch songs'));
     }
-  } catch (error) {
+  } catch (error: any) {
     yield put(fetchSongsFailure(error.message));
   }
 }
@@ -54,7 +53,7 @@ function* addSongSaga(action: { type: string; payload: Song }) {
     } else {
       yield put(addSongFailure('Failed to add song'));
     }
-  } catch (error) {
+  } catch (error: any) {
     yield put(addSongFailure(error.message));
   }
 }
@@ -68,7 +67,7 @@ function* updateSongSaga(action: { type: string; payload: Song }) {
     } else {
       yield put(updateSongFailure('Failed to update song'));
     }
-  } catch (error) {
+  } catch (error: any) {
     yield put(updateSongFailure(error.message));
   }
 }
@@ -82,7 +81,7 @@ function* deleteSongSaga(action: { type: string; payload: string }) {
     } else {
       yield put(deleteSongFailure('Failed to delete song'));
     }
-  } catch (error) {
+  } catch (error: any) {
     yield put(deleteSongFailure(error.message));
   }
 }
@@ -96,7 +95,7 @@ function* fetchStatisticsSaga() {
     } else {
       yield put(fetchStatisticsFailure('Failed to fetch statistics'));
     }
-  } catch (error) {
+  } catch (error: any) {
     yield put(fetchStatisticsFailure(error.message));
   }
 }
