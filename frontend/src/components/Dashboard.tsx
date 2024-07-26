@@ -5,7 +5,6 @@ import SongList from './SongList';
 import { css } from '@emotion/react';
 import { Route, Routes } from 'react-router-dom';
 
-// Container for the entire dashboard layout
 const dashboardContainer = css`
   display: flex;
   min-height: 100vh;
