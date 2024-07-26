@@ -18,8 +18,8 @@ const HomePage: React.FC = () => {
   return (
     <div css={containerStyle}>
       <section css={heroSectionStyle}>
-        <h1 css={heroTitleStyle}>Welcome to Test Project </h1>
-        <p css={heroSubtitleStyle}>Test Project at Addis Software PLC</p>
+        <h1 css={heroTitleStyle}>Welcome to MusicApp</h1>
+        <p css={heroSubtitleStyle}>Discover your favorite songs, albums, and artists all in one place.</p>
         <button css={buttonFormStyle} onClick={handleButtonClick}>
           Get Test Project Here
         </button>

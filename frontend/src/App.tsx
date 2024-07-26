@@ -1,11 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import React, { FC } from 'react'; 
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Dashboard from './components/Dashboard';
 import 'react-toastify/dist/ReactToastify.css';
 import Modal from 'react-modal';
-import NotFound from 'pages/NotFound';
 
 Modal.setAppElement('#root');
 
@@ -17,8 +16,6 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="*" element={<NotFound />} /> 
-
         </Routes>
       </main>
     </>
