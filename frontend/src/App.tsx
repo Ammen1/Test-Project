@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React, { FC } from 'react'; 
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Dashboard from './components/Dashboard';
 import 'react-toastify/dist/ReactToastify.css';
