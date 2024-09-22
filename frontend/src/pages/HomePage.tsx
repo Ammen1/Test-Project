@@ -23,8 +23,7 @@ const HomePage: React.FC = () => {
         <button css={buttonFormStyle} onClick={handleButtonClick}>
           Get Test Project Here
         </button>
-        <p css={messageStyle}>
-          I am currently working on this project as a test project to secure a position at Addis Software PLC. 
+        <p css={messageStyle}> 
           My goal is to demonstrate my skills and commitment to potential employers. Thank you for taking the time to review my work!
         </p>
       </section>
